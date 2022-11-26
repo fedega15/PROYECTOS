@@ -1,0 +1,58 @@
+.calculatorContainer{
+    
+    width:500px;
+    margin: 100px auto;
+    border: 2px solid;
+    border-radius: 7px;
+}
+
+.container {
+    position: relative;
+    top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ;
+}
+
+.calculatorButton {
+    padding:20px;
+    font: size 30px;
+    border: solid 1px white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.calculatorButton:hover{
+    background-color: #222;
+}
+
+.calculatorScreen{
+    border-bottom: solid 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.calculatorCurrentValue {
+    position: relative;
+    top:35px;
+    font-size: 48px;
+    font-weight: bold;
+    width: 450px;
+    height: 70px;
+}
+.screenText {
+
+    margin: 30px;
+    position:fixed;
+    left: 450px;
+    top:70px;
+
+}
